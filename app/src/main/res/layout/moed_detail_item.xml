@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="40dp"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/tv_ordereddetail_stu_name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="stu_name"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_ordereddetail_stu_id"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:layout_below="@id/tv_ordereddetail_stu_name"
+        android:text="stu_id" />
+
+
+    <TextView
+        android:id="@+id/tv_ordereddetail_Others"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/tv_ordereddetail_stu_id"
+        android:textSize="14sp"
+        android:text="others"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btn_finish_order"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:text="完成"
+        android:background="#ff0000"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>

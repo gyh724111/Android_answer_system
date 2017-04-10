@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="40dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:text="id"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvTeacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvId"
+        android:text="title"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvThese_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvTeacher_name"
+        android:layout_toRightOf="@id/tvId"
+        android:text="desc" />
+
+
+    <TextView
+        android:id="@+id/tvOthers"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:text="others"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvAnswer_time"
+        android:layout_width="60dp"
+        android:layout_height="47dp"
+        android:layout_toLeftOf="@id/tvOthers"
+        android:textSize="10sp"
+        android:text="time"
+        android:gravity="center"/>
+</RelativeLayout>

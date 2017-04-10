@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.yonghuige.testjson.avtivitys.OrderActivity">
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_hint_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="预约详情"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_order_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_hint_order"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="59dp"
+        android:text="order_course" />
+
+
+    <TextView
+        android:id="@+id/tv_order_hint_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_order_hint_teacher"
+        android:layout_alignBottom="@+id/tv_order_hint_teacher"
+        android:layout_alignParentStart="true"
+        android:text="预约课程:"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:id="@+id/tv_order_hint_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_order_count"
+        android:layout_marginBottom="24dp"
+        android:layout_toStartOf="@+id/btn_order"
+        android:text="预约人数:"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:id="@+id/tv_order_hint_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_order_teacher_name"
+        android:layout_alignStart="@+id/tv_order_hint_count"
+        android:text="预约教师:"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:id="@+id/tv_order_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_order_teacher_name"
+        android:layout_below="@+id/tv_order_teacher_name"
+        android:layout_marginTop="56dp"
+        android:text="order_count" />
+    <EditText
+        android:id="@+id/et_order_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tv_order_count"
+        android:layout_marginTop="10dp"
+        android:background="#f4f4f4"
+        android:enabled="true"
+        android:gravity="top"
+        android:hint="请输入预约信息详情，如日期、时间等基本信息..."
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minLines="3"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignEnd="@id/tv_order_teacher_name"
+        android:layout_below='@id/et_order_detail'
+        android:text="预定" />
+
+    <TextView
+        android:id="@+id/tv_order_teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginStart="16dp"
+        android:text="order_teacher"
+        android:layout_alignBaseline="@+id/tv_order_course_name"
+        android:layout_alignBottom="@+id/tv_order_course_name"
+        android:layout_toEndOf="@+id/tv_hint_order" />
+
+</RelativeLayout>

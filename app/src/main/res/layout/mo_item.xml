@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="40dp"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_cancel_order"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:text="取消"
+        android:background="#ff0000"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/tv_mo_These_courses"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:text="these_courses"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/tv_mo_Teacher_name"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="teacher_name"
+        android:layout_margin="5dp"
+        android:textSize="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_mo_others"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:textSize="10sp"
+        android:text="others"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btn_cancel_order"
+        android:layout_alignTop="@+id/tv_mo_These_courses"
+        android:layout_toEndOf="@+id/tv_mo_Teacher_name" />
+</RelativeLayout>

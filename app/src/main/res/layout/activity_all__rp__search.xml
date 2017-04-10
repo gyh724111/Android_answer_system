@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.yonghuige.testjson.avtivitys.All_RP_Search">
+
+    <TextView
+        android:id="@+id/hint_R_N"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="门牌号："
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/et_R_N"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/hint_R_D"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/hint_R_N"
+        android:gravity="center_vertical"
+        android:background="#60e6e6e6"
+        android:hint="输入门牌号"
+        android:paddingLeft="10dp"
+        android:textSize="12dp" />
+
+    <ListView
+        android:id="@+id/lvallRPs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:divider="#60e6e6e6"
+        android:dividerHeight="10dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/hint_R_D"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hint_R_N"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="部门："
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btn_allrp_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hint_R_D"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:alpha="0.5"
+        android:background="#cd6f89f1"
+        android:text="查询" />
+
+    <EditText
+        android:id="@+id/et_R_D"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/hint_R_N"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/hint_R_N"
+        android:gravity="center_vertical"
+        android:background="#60e6e6e6"
+        android:hint="输入所属部门"
+        android:paddingLeft="10dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/hint_R_P"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="电话："
+        android:textSize="18dp"
+        android:layout_below="@id/hint_R_D"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_R_P"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:background="#60e6e6e6"
+        android:hint="输入电话"
+        android:paddingLeft="10dp"
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/et_R_D"
+        android:layout_alignStart="@+id/et_R_N" />
+</RelativeLayout>

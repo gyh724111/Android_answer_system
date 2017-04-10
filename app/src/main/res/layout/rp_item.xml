@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="40dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_rp_id"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:text="id"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_room_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_rp_id"
+        android:text="部门"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_room_num"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_room_division"
+        android:layout_toRightOf="@id/tv_rp_id"
+        android:text="room_num" />
+
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:text="phone"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_rp_others"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_phone"
+        android:textSize="10sp"
+        android:text="other"
+        android:layout_alignParentRight="true"
+        android:gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:minHeight="40dp">
+
+
+    <TextView
+        android:id="@+id/tv_myordered_These_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:text="these_courses"
+        android:layout_toStartOf="@+id/tv_myordered_Answer_Position" />
+
+
+    <TextView
+        android:id="@+id/tv_countallordered"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:text="已预约1人"
+        android:textSize="10sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_myordered_Others"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/tv_countallordered"
+        android:gravity="center"
+        android:text="others"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_myordered_Answer_Time"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/tv_myordered_Others"
+        android:gravity="center"
+        android:text="time"
+        android:textSize="8sp" />
+    <TextView
+        android:id="@+id/tv_myordered_Answer_Position"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/tv_myordered_Answer_Time"
+        android:gravity="center"
+        android:text="Position"
+        android:textSize="12sp" />
+
+</RelativeLayout>

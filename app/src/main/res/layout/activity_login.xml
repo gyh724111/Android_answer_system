@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.yonghuige.testjson.avtivitys.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_login_password"
+        android:hint="请输入密码"
+        android:alpha="0.5"
+        android:background="#e0cccaca"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/et_login_username"
+        android:layout_alignStart="@+id/et_login_username" />
+
+    <TextView
+        android:text="密码:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_L_P"
+        android:layout_alignTop="@+id/et_login_password"
+        android:layout_alignEnd="@+id/hint_L_U_N" />
+
+    <TextView
+        android:text="学号/工号:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:id="@+id/hint_L_U_N"
+        android:layout_alignTop="@+id/et_login_username"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="203dp"
+        android:alpha="0.5"
+        android:background="#e0cccaca"
+        android:id="@+id/et_login_username"
+        android:hint="请输入学号/工号"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/tv_login_title"
+        android:layout_toEndOf="@+id/hint_L_U_N" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/smu"
+        android:alpha="0.6"
+        android:layout_below="@+id/tv_login_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:text="教师坐班答疑查询系统"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/tv_login_title"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="教师登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_teacher_login"
+        android:layout_alignBaseline="@+id/btn_student_login"
+        android:layout_alignBottom="@+id/btn_student_login"
+        android:layout_alignEnd="@+id/tv_login_title" />
+
+    <Button
+        android:text="学生登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/btn_student_login"
+        android:layout_below="@+id/et_login_password"
+        android:layout_alignStart="@+id/tv_login_title" />
+</RelativeLayout>
